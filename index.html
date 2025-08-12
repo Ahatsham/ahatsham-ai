@@ -1,43 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Ahatsham - Home</title>
-    <link rel="stylesheet" href="styles.css"> <!-- If you add CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahatsham Hayat - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .profile-img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+        }
+        .highlight-box {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #0d6efd;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
+
+<!-- Navigation -->
+<nav class="bg-white border-bottom p-3">
+    <div class="container">
+        <ul class="mb-0">
             <li><a href="index.html">Home</a></li>
             <li><a href="research.html">Research</a></li>
             <li><a href="publications.html">Publications</a></li>
             <li><a href="news.html">News</a></li>
         </ul>
-    </nav>
-    
-    <header>
-        <img src="ahatsham.jpeg" alt="Ahatsham" width="200"> <!-- Adjust width as needed -->
-        <h1>Ahatsham Hayat</h1>
-    </header>
-    
-    <section>
-        <p>
-            <!-- Your intro paragraph: One paragraph with links -->
-            I am a Ph.D. student in Computer Engineering with a passion for advancing research in artificial intelligence and machine learning. My work focuses on developing and fine-tuning language models to better understand and predict human behavior using longitudinal data. Combining strong technical expertise with a dedication to innovative problem-solving, I aim to contribute meaningful solutions in AI-driven data analysis.
-            
-            Beyond research, I am committed to sharing knowledge and fostering collaboration within the community. I enjoy exploring the intersection of technology and human experience, always striving to push the boundaries of what intelligent systems can achieve. You can reach me at <a href="mailto:aahatsham2@huskers.unl.edu">aahatsham2@huskers.unl.edu</a> or view my publications on <a href="http://scholar.google.com/citations?user=P-MrocsAAAAJ&hl=en">Google Scholar</a>.
-        </p>
-        
-        <p>
-            <!-- Follow-up paragraph about your research -->
-            My research centers on leveraging advanced language models and multimodal machine learning techniques to analyze longitudinal experiential data. Specifically, I work on developing large language models to predict behavioral and emotional engagement, science identity, and confidence levels over time. By integrating temporal patterns and multimodal inputs, my work aims to improve the accuracy and interpretability of AI-driven forecasting models in educational and human-centered contexts.
-        </p>
-          <h2>Research Focus</h2>
-        <p>
-            My research centers on leveraging advanced language models and multimodal machine learning techniques to analyze longitudinal experiential data. Specifically, I work on fine-tuning large language models to predict behavioral and emotional engagement, science identity, and confidence levels over time. By integrating temporal patterns and multimodal inputs, my work aims to improve the accuracy and interpretability of AI-driven forecasting models in educational and human-centered contexts.
-        </p>
-        <p>
-            Additionally, I investigate robust methods for handling missing data, domain adaptation, and cross-distribution evaluation to ensure that models remain reliable across diverse populations and changing conditions. Ultimately, my goal is to build AI systems that provide actionable insights and support personalized learning and development.
-        </p>
-    </section>
+    </div>
+</nav>
+
+<!-- Main Container -->
+<div class="container mt-5">
+
+    <!-- Top Section -->
+    <div class="row align-items-center">
+        <!-- Profile Image -->
+        <div class="col-md-4 text-center">
+            <img src="ahatsham.jpeg" alt="Ahatsham Hayat" class="profile-img mb-3">
+        </div>
+        <!-- Intro -->
+        <div class="col-md-8">
+            <h1>Ahatsham Hayat</h1>
+            <h5 class="text-muted">Advancing Human-Centric AI</h5>
+            <p>
+                I am a Ph.D. student in Computer Engineering with a passion for advancing research in artificial intelligence and machine learning. My work focuses on developing large language models to better understand and predict human behavior using longitudinal data. Combining strong technical expertise with a dedication to innovative problem-solving, I aim to contribute meaningful solutions in AI-driven data analysis.
+            </p>
+            <p>
+                Beyond research, I am committed to sharing knowledge and fostering collaboration within the community. I enjoy exploring the intersection of technology and human experience, always striving to push the boundaries of what intelligent systems can achieve. You can reach me at 
+                <a href="mailto:aahatsham2@huskers.unl.edu">aahatsham2@huskers.unl.edu</a> or view my publications on 
+                <a href="http://scholar.google.com/citations?user=P-MrocsAAAAJ&hl=en">Google Scholar</a>.
+            </p>
+        </div>
+    </div>
+
+    <hr class="my-4">
+
+    <!-- Two Column Section -->
+    <div class="row">
+        <!-- Left: Research Focus -->
+        <div class="col-md-8">
+            <h2>Research Focus</h2>
+            <p>
+                My research centers on leveraging advanced language models and multimodal machine learning techniques to analyze longitudinal experiential data. Specifically, I work on developing large language models to predict behavioral and emotional engagement, science identity, and confidence levels over time. By integrating temporal patterns and multimodal inputs, my work aims to improve the accuracy and interpretability of AI-driven forecasting models in educational and human-centered contexts.
+            </p>
+            <p>
+                Additionally, I investigate robust methods for handling missing data, domain adaptation, and cross-distribution evaluation to ensure that models remain reliable across diverse populations and changing conditions. Ultimately, my goal is to build AI systems that provide actionable insights and support personalized learning and development.
+            </p>
+        </div>
+
+        <!-- Right: Highlights -->
+        <div class="col-md-4">
+            <div class="highlight-box">
+                <h5>Spotlight</h5>
+                <p>Example spotlight or featured announcement goes here.</p>
+            </div>
+            <div class="highlight-box">
+                <h5>Research Highlights</h5>
+                <ul>
+                    <li>31 July - 1 August 2025: Presented paper at CoNLL 2025.</li>
+                    <li>7 July 2025: Blue Sky Award at ICMI 2025.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
